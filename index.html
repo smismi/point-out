@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>query._</title>
+	    
+	<meta charset="utf-8"/>
+	    <title>query.pointOut</title>
 
+	 
 
-     
+	<script src="js/jquery.2.0.js"></script>
 
-    <script src="js/jquery.2.0.js"></script>
+	<script src="js/jquery.pointOut.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
 
-    <script type="text/javascript">
-        document.write("<script src=\"js\/jquery._.js?" + (new Date()).getTime() + "\"><\/script>");
-        document.write("<link rel=\"stylesheet\" href=\"css\/style.css?" + (new Date()).getTime() + "\" type=\"text/css\">");
-    </script>
 
 
 </head>
 <body>   
  
-<h1>PLUGIN</h1>
+<h1>PLUGIN pointOut</h1>
 
  
 
 <script type="text/javascript">
-    $('#selector')._();
+	$(document).ready(function(){
+
+		$('body').pointOut({
+			script:[{
+					el: "#el01",
+					speed :1000,
+					pos: [0, 0]   //percent by el dimensions
+				},
+				{
+					el: "#el02",
+					speed :1000,
+					pos: [0, 0]
+				},
+				{
+					el: "#el03",
+					speed :1000,
+					pos: [0, 0]
+				},
+				{
+					el: "#el04",
+					speed :1000,
+					pos: [0, 0]
+				}],
+
+				delay: 1000,
+				flag1: true
+				}
+		);
+
+	})
 </script>
 
 </body>
