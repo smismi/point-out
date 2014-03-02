@@ -24,7 +24,32 @@ body {
 }
 
 .example_3 {
+	border: 12px solid yellow;
 	position: fixed;
-	bottom: 200px;
+	bottom: 30px;
 	right: 120px;
+}
+.example_4 {
+	border: 12px solid red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -50px;
+
+}
+
+
+
+
+.blump {
+	position: fixed;
+	border-radius: 12px;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	left: 50%;
+	border: 2px solid blue;
+
+
 }
