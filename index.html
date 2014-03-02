@@ -13,41 +13,49 @@
 	<link rel="stylesheet" href="css/style.css"/>
 
 
-
 </head>
 <body>   
  
 <h1>PLUGIN pointOut</h1>
 
+
+<div class="example example_1" id="el01"> first </div>
+<div class="example example_2" id="el02"> second </div>
+<div class="example example_3" id="el03"> third </div>
+
+
+
  
 
 <script type="text/javascript">
-	$(document).ready(function(){
+	$(document).ready(function () {
 
 		$('body').pointOut({
-			script:[{
-					el: "#el01",
-					speed :1000,
-					pos: [0, 0]   //percent by el dimensions
-				},
-				{
-					el: "#el02",
-					speed :1000,
-					pos: [0, 0]
-				},
-				{
-					el: "#el03",
-					speed :1000,
-					pos: [0, 0]
-				},
-				{
-					el: "#el04",
-					speed :1000,
-					pos: [0, 0]
-				}],
+					script: [
+						{
+							el: "#el01",
+							speed: 1000,
+							pos: [0, 0]   //percent by el dimensions
+						},
+						{
+							el: "#el02",
+							speed: 1000,
+							pos: [0, 0]
+						},
+						{
+							el: "#el03",
+							speed: 1000,
+							pos: [0, 0]
+						},
+						{
+							el: "#el04",
+							speed: 1000,
+							pos: [0, 0]
+						}
+					],
 
-				delay: 1000,
-				flag1: true
+					delay: 1000,
+					flag1: true
 				}
 		);
 

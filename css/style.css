@@ -1,3 +1,30 @@
 body {
 	font: normal 12px tahoma;
 }
+
+.example {
+	border: 12px solid silver;
+	width: 300px;
+}
+
+
+.example {
+	border: 12px solid silver;
+	width: 300px;
+	height: 100px;
+}
+
+.example_1 {
+	border: 12px solid green;
+	float:left;
+}
+
+.example_2 {
+	float:right;
+}
+
+.example_3 {
+	position: fixed;
+	bottom: 200px;
+	right: 120px;
+}
